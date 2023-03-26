@@ -16,6 +16,9 @@ jobs:
     strategy:
       matrix:
         node-version: [18.x]
+        include:
+         - name: Node.js 18.x
+           node-version: "18.14"
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -28,4 +31,5 @@ jobs:
     - run: npm cache clean --force
     - run: npm install
     - run: npm install -g @angular/cli
+    - run: ng serve
     - run: npm test
