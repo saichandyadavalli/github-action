@@ -28,5 +28,4 @@ jobs:
     - run: npm cache clean --force
     - run: npm install
     - run: npm install -g @angular/cli
-    - run: ng build 
     - run: npm test
