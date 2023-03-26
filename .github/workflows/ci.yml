@@ -27,7 +27,7 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm install -g @angular/cli
-    - run: ng serve
+    - run: ng serve --port 4201
     - run: npm run server
     - run: ng build 
     - run: npm test
